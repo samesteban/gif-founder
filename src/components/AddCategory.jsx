@@ -18,7 +18,7 @@ export const AddCategory = ({ onNewCategory }) => {
 		setInputValue("");
 	};
 	return (
-		<div>
+		<div className="w-full">
 			<form onSubmit={onSubmit}>
 				<label
 					htmlFor="search"

@@ -10,7 +10,7 @@ const GifGrid = ({ category }) => {
 			<h2 className="mb-3 text-xl font-semibold">
 				{isLoading ? "Cargando..." : category}
 			</h2>
-			<div className="grid w-full grid-cols-4 gap-6">
+			<div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 				{images.map((image) => (
 					<GifCard key={image.id} {...image} />
 				))}
