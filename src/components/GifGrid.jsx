@@ -8,7 +8,7 @@ const GifGrid = ({ category }) => {
 	return (
 		<div
 			key={category}
-			className="p-8 odd:bg-stone-100 even:bg-stone-200 [&_.last-search]:first:inline-block"
+			className="p-8 odd:bg-stone-100 even:bg-stone-200 [&_.last-search]:last:inline-block"
 		>
 			<h2 className="mb-3 text-2xl font-semibold">
 				{isLoading ? "Cargando..." : category}{" "}
