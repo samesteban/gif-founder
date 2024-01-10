@@ -18,14 +18,8 @@ export const AddCategory = ({ onNewCategory }) => {
 		setInputValue("");
 	};
 	return (
-		<div className="w-full">
+		<div className="sticky top-0 z-10 w-full p-4 bg-white">
 			<form onSubmit={onSubmit}>
-				<label
-					htmlFor="search"
-					className="mb-2 text-sm font-medium text-gray-900 sr-only"
-				>
-					Search
-				</label>
 				<div className="relative">
 					<div className="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-3">
 						<svg
@@ -48,7 +42,7 @@ export const AddCategory = ({ onNewCategory }) => {
 						type="search"
 						id="search"
 						className="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg outline-none ps-10 bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
-						placeholder="Search"
+						placeholder="Type whatever you want..."
 						value={inputValue}
 						onChange={onInputChange}
 					/>
@@ -56,7 +50,7 @@ export const AddCategory = ({ onNewCategory }) => {
 						type="submit"
 						className="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-2 font-black uppercase"
 					>
-						Add Category
+						Search
 					</button>
 				</div>
 			</form>
