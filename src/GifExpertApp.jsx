@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AddCategory, Heading, GifCategories } from "./components";
 
 const GifExpertApp = () => {
-	const [categories, setCategories] = useState(["Death Note"]);
+	const [categories, setCategories] = useState(["gif"]);
 
 	const onAddCategory = (newCategory) => {
 		if (categories.indexOf(newCategory) > -1) return;
